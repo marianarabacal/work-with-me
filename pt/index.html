@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Decision Breakthrough Call · Mariana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Decision Breakthrough Call, clareza e direção para decisões difíceis com Mariana." />
+
+  <link rel="preconnect" href="httpsps://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F7F4F1;
+      --bg-soft: #D9D3CC;
+      --text: #2C2C2C;
+      --terra: #C49A7A;
+      --terra-dark: #b78263;
+      --olive: #8C9070;
+      --accent: #8CFCFF;
+      --max-width: 960px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 24px 16px 72px;
+    }
+
+    .lang-switch {
+      text-align: right;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .lang-switch a {
+      text-decoration: none;
+      margin-left: 10px;
+      color: var(--olive);
+      font-weight: 500;
+    }
+
+    .lang-switch a.active {
+      font-weight: 700;
+      color: var(--terra);
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: 768px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .hero-text { max-width: 540px; }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 2.1rem;
+      margin: 0 0 8px;
+      color: var(--olive);
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .session-price {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--terra-dark);
+      margin: 4px 0 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--terra);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .btn:hover { background: var(--terra-dark); }
+
+    .hero-photo img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--bg-soft);
+    }
+
+    section {
+      margin-top: 36px;
+    }
+
+    section h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+      color: var(--olive);
+    }
+
+    p {
+      margin: 6px 0 10px;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin: 6px 0 10px 18px;
+      padding: 0;
+      font-size: 0.95rem;
+    }
+
+    li { margin-bottom: 4px; }
+
+    .highlight-box {
+      background: var(--bg-soft);
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      border-left: 3px solid var(--olive);
+      margin-top: 8px;
+    }
+
+    .two-cols {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 820px) {
+      .two-cols {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 820px) {
+      .testimonials {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .testimonial {
+      background: #fff;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.04);
+      font-size: 0.9rem;
+    }
+
+    .faq-item {
+      margin-bottom: 12px;
+    }
+
+    .faq-item p:first-child {
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="lang-switch">
+      <span class="active">PT</span> | <a href="../en/index.html">EN</a>
+    </div>
+
+    <header>
+      <div class="hero-text">
+        <h1>Decision Breakthrough Call</h1>
+        <p class="subtitle">
+          Clareza e direção para decisões difíceis.
+        </p>
+        <p class="tagline">A decisão já está dentro de ti, eu ajudo-te a vê-la.</p>
+        <a class="btn" href="https://ig.me/m/marianarabacal" target="_blank" rel="noopener">
+          Envia mensagem para agendar
+        </a>
+      </div>
+
+      <div class="hero-photo">
+        <img src="../assets/foto-perfil.jpg" alt="Mariana">
+      </div>
+    </header>
+
+    <section>
+      <h2>O que é a Decision Breakthrough Call</h2>
+      <p>Quando não consegues tomar uma decisão, o problema raramente é falta de inteligência. É excesso de ruído, medo e pressão externa.</p>
+      <p>Nesta sessão ajudo-te a desligar o barulho e a ouvir o que realmente sentes. A tua verdade já está aí, só não está acessível com clareza neste momento.</p>
+
+      <div class="highlight-box">
+        No final, sais com clareza sobre o que queres, segurança interna para assumir a tua escolha e alívio por finalmente saberes o caminho a seguir.
+      </div>
+    </section>
+
+    <section>
+      <h2>O que acontece na call</h2>
+      <ul>
+        <li>escuto-te com atenção profunda</li>
+        <li>faço perguntas que te ajudam a ir ao essencial</li>
+        <li>capto o que dizes nas entrelinhas</li>
+        <li>devolvo-te a verdade que já sabes mas ainda não estás a conseguir assumir</li>
+        <li>ajudo-te a organizar o que está confuso, para que a decisão se torne mais clara</li>
+      </ul>
+      <p>Não te digo o que fazer, nem decido por ti. Crio um espaço seguro para que a tua própria verdade fique visível.</p>
+    </section>
+
+    <section>
+      <div class="two-cols">
+        <div>
+          <h2>Para quem é</h2>
+          <ul>
+            <li>tens uma decisão que tens adiado</li>
+            <li>sentes-te presa em cenários mentais</li>
+            <li>tens medo de escolher “mal”</li>
+            <li>já sentes a resposta, mas não consegues confiar</li>
+            <li>queres avançar com mais leveza e presença</li>
+            <li>a decisão pode ser pequena ou grande, mas está a mexer contigo ou a tirar-te a paz</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Para quem não é</h2>
+          <ul>
+            <li>queres que alguém te diga exatamente o que fazer</li>
+            <li>não estás disponível para ser honesta contigo</li>
+            <li>preferes manter tudo igual, mesmo sabendo que já não faz sentido</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>O que dizem as pessoas</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          “Ajudou-me a ver a situação com mais clareza e a abrir o meu leque de possibilidades. Saí com mais confiança na minha decisão.”
+        </div>
+        <div class="testimonial">
+          “A maioria das vezes precisamos de ouvir perspetivas novas que nos amparam na tomada de decisão. Senti exatamente isso.”
+        </div>
+        <div class="testimonial">
+          “A Mariana ajudou-me com um problema que carregava há mais de 10 anos. Trouxe uma nova perspetiva e uma paz que eu não encontrava.”
+        </div>
+        <div class="testimonial">
+          “Confirmaste o que o meu coração já me dizia. Senti-me apaziguada e finalmente consegui decidir.”
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sobre mim</h2>
+      <p>Sou a Mariana. Durante muitos anos tomei decisões a partir do que era esperado de mim, não do que eu realmente sentia. Chegou um momento em que o ruído interno era tão grande que já não sabia quem era no meio de tantas escolhas “certas”, mas desalinhadas.</p>
+      <p>Comecei um caminho de regresso a mim: terapia, espiritualidade, presença, intuição, escolhas mais verdadeiras. Hoje uso essa experiência e a minha sensibilidade natural para ajudar outras pessoas a desligarem o ruído, ouvirem-se com clareza e confiarem no que já sabem por dentro.</p>
+    </section>
+
+    <section>
+      <h2>Acompanhamento continuado</h2>
+      <p>Se estiveres a atravessar uma fase de transição e sentires que precisas de apoio para além desta call, existe a possibilidade de acompanhamento continuado. Podemos falar sobre isso no final da sessão.</p>
+    </section>
+
+    <section>
+      <h2>Perguntas frequentes</h2>
+
+      <div class="faq-item">
+        <p>Quanto tempo dura a call?</p>
+        <p>Aproximadamente 30 minutos.</p>
+      </div>
+
+      <div class="faq-item">
+        <p>A decisão tem de ser “grande”?</p>
+        <p>Não. A decisão pode ser pequena ou grande. O que importa é o impacto que está a ter na tua paz interna.</p>
+      </div>
+
+      <div class="faq-item">
+        <p>Preciso de chegar já com tudo muito claro?</p>
+        <p>Não. Podes chegar confusa, sem saber explicar bem. Vamos organizar juntas o que estás a sentir.</p>
+      </div>
+
+      <div class="faq-item">
+        <p>E se eu quiser apoio para além desta sessão?</p>
+        <p>Podemos falar sobre acompanhamento continuado no final da call, se sentires que faz sentido para ti.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Como marcar</h2>
+      <p>Nesta fase faço a marcação de forma pessoal para garantir que esta sessão é o que precisas.</p>
+      <p>Se tiveres dúvidas sobre o processo, podes enviar mensagem antes de marcar.</p>
+      <p class="session-price">O valor da sessão é 60€.</p>
+      <a class="btn" href="https://ig.me/m/marianarabacal" target="_blank" rel="noopener">
+        Envia mensagem para agendar
+      </a>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Mariana — Decision Breakthrough Call.</p>
+      <p>Este espaço não substitui acompanhamento médico ou psicológico.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
