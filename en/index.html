@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mariana · Clarity and inner alignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="I support people in moments of decision and life transition, so they can find clarity and return to themselves." />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <div class="lang-switch">
+      <a href="../pt/index.html">PT</a> | <span class="active">EN</span>
+    </div>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      ☰ <span>Menu</span>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="decision-breakthrough.html">Decision Breakthrough Call</a>
+      <a href="returning-to-yourself.html">Returning to Yourself</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <header>
+        <div class="hero-text">
+            <img src="../assets/img/mariana-profile.jpg" alt="Mariana smiling" class="hero-inline-photo" />
+            <h1>When you think too much and hear yourself too little</h1>
+            <p class="subtitle">
+            A space for decisions that steal your peace and life shifts you can no longer postpone.
+            </p>
+            <p class="lead">
+            You might feel like you’re at a turning point. Carrying on as things are no longer feels right,
+            but the next step isn’t clear yet.
+            </p>
+            <p>
+            Maybe there’s one specific decision weighing on you, or simply the sense that the life you’re living
+            no longer fits who you are. In both cases, what hurts is the same:
+            <strong>being stuck in between</strong>.
+            </p>
+            <p>
+            Here you’ll find two different containers, with the same intention:
+            to help you return to yourself, so your choices come from an inner truth rather than external pressure.
+            </p>
+        </div>
+    </header>
+
+    <section>
+        <h2>How I can be by your side</h2>
+        <div class="highlight">
+            <p><strong>Decision Breakthrough Call · Clarity to Decide</strong></p>
+            <p>
+            A single session for decisions that are stealing your peace, big or small.
+            A space to calm the noise, organise what feels confusing and find your next step from within.
+            </p>
+            <p>
+            <a href="decision-breakthrough.html">Learn more about this call</a>
+            </p>
+        </div>
+
+        <div class="highlight">
+            <p><strong>Returning to Yourself · Deep life transition support</strong></p>
+            <p>
+            An ongoing process for those who no longer recognise themselves in the life they’re living and
+            want to realign work, lifestyle and presence with who they are today.
+            </p>
+            <p>
+            <a href="returning-to-yourself.html">Learn more about this process</a>
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>If you recognise yourself in this</h2>
+        <ul>
+            <li>feeling stuck in mental loops and “what ifs”</li>
+            <li>no longer feeling at home in the life you’re living</li>
+            <li>afraid of making “the wrong decision” and end up paralysed</li>
+            <li>want to trust what you feel again, but keep doubting yourself</li>
+        </ul>
+        <p>
+            then it’s likely that something in you is already asking for change.  
+            You don’t have to walk through this alone.
+        </p>
+    </section>
+
+    <section>
+        <h2>Where to start</h2>
+        <p>
+            If there is one specific decision weighing on you right now, start with the
+            <strong>Decision Breakthrough Call</strong>. Sometimes all it takes is a safe and honest space
+            to hear what you already knew, but couldn’t yet fully own.
+        </p>
+        <p>
+            If it feels like it’s no longer just about one decision, but about the way you’re living,
+            <strong>Returning to Yourself</strong> might be the space for that transition — with support,
+            presence and truth.
+        </p>
+        <p>
+            If you’re not sure where to begin, send me a message and share what you’re going through.
+            From there, we’ll find the first step together.
+        </p>
+        <a class="btn" href="https://ig.me/m/marianarabacal" target="_blank" rel="noopener">
+            Message me
+        </a>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Mariana.</p>
+      <p>This space does not replace medical or psychological care.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-nav');
+
+    if (toggle && nav) {
+     toggle.addEventListener('click', () => {
+       const isOpen = nav.classList.toggle('open');
+       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+  </script>
+</body>
+</html>

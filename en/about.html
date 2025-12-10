@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About · Mariana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mariana's story, from a corporate life to returning to herself, and why she now supports people through decisions and life transitions." />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <div class="lang-switch">
+      <a href="../pt/sobre-mim.html">PT</a> | <span class="active">EN</span>
+    </div>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      ☰ <span>Menu</span>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="decision-breakthrough.html">Decision Breakthrough Call</a>
+      <a href="returning-to-yourself.html">Returning to Yourself</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+
+    <header>
+      <div class="hero-text">
+        <img src="../assets/img/mariana-profile.jpg" alt="Mariana smiling" class="hero-inline-photo" />
+        <h1>About me</h1>
+        <p class="subtitle">From the life that “made sense” to the life that finally feels true to me.</p>
+        <p class="lead">
+          Since I was a child, I’ve said I wanted “to help people”. I just didn’t know how.
+        </p>
+        <p>
+          Along the way, I did what seemed like the right thing: university, a solid career in software companies, 15 years managing projects and products. On the outside, everything looked fine. On the inside, I was slowly losing myself.
+        </p>
+      </div>
+    </header>
+
+    <section>
+      <h2>How I lost myself</h2>
+      <p>
+        When it was time to choose what to study, I had no idea what I really wanted. I did the psychometric tests, it pointed to Economics, and I ended up in Management. It was the most “versatile” option, the one that kept the more doors open. It wasn’t passion, it was logic.
+      </p>
+      <p>
+        The idea of helping people was put on hold. I could always do that on the side, that's what I told myself. The priority was having a stable job, a safe path.
+      </p>
+      <p>
+        For years, I followed what I thought was expected of me. I did well, I was recognised, I had a good salary. But at some point, especially after working from home, it became impossible to ignore: I no longer felt at home in my own life.
+      </p>
+      <p>
+        Getting out of bed in the morning became harder. I felt like I was slowly shrinking. The life I had built no longer felt like mine, but I still didn’t know what to do with that.
+      </p>
+    </section>
+
+    <section>
+      <h2>The slow return to myself</h2>
+      <p>
+        That’s when I started therapy with a very clear intention: I wanted to remember who I was as a child, before adapting so much to what others expected of me.
+      </p>
+      <p>
+        Around the same time, I discovered Reiki and a more spiritual path I didn’t know existed before. I started taking better care of my body, my energy and my mind.
+      </p>
+      <p>
+        Over time, I realised that the “safe” job was no longer safe for me. What was familiar was no longer true. I gathered courage and quit my job, without a detailed plan, but with a deep sense that I needed time and space to rediscover myself.
+      </p>
+      <p>
+        It wasn’t a three-month break like I thought it would be. It was a life transition.
+      </p>
+    </section>
+
+    <section>
+      <h2>What changed in my life</h2>
+      <p>
+        Since then, my life stopped being just about work and became more about presence. About being whole wherever I am.
+      </p>
+      <p>
+        I certified in Reiki, Coaching and Yoga. I went deeper into personal and spiritual development. I adjusted how I move, eat and rest. I started dancing, singing and listening to my body again.
+      </p>
+      <p>
+        I fell in love with a small village in Bali, where I now spend many months of the year. There, I find the quiet, nature and community that help me return to myself whenever I drift away.
+      </p>
+      <p>
+        Through the conversations I’ve had along this path, I realised something important: people come to me for clarity, for support in translating what they feel into direction and decisions.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I do now</h2>
+      <p>
+        Today, I support people in moments of decision and life transition.
+      </p>
+      <p>
+        I’m not the one who has the answers. My role is to bring calmness, help organise what feels confusing, and mirror back, with clarity, what is already true inside of them but not yet fully owned.
+      </p>
+      <p>
+        My work lives in that subtle space between presence, deep listening and honesty. I don’t project my own mental maps onto you: I help you see yours.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I believe in</h2>
+      <ul>
+        <li>That clarity doesn’t come from thinking more, but from returning to yourself.</li>
+        <li>That small decisions can feel as heavy as big ones.</li>
+        <li>That no one knows you better than you do, even when you feel lost.</li>
+        <li>That your truth doesn’t have to be explainable to be valid.</li>
+        <li>That it’s easier to walk through doubts when you’re not alone inside them.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>If you recognise yourself in my story</h2>
+      <p>
+        If you feel like you’ve lost yourself along the way, if you’re tired of living in “should” instead of “what feels true”, or if there are decisions that have been weighing on you for too long, it might make sense for us to connect.
+      </p>
+      <p>
+        You can start with the <a href="decision-breakthrough.html">Decision Breakthrough Call</a> if there’s a specific decision asking for your attention, or simply reach out by message and share where you are now.
+      </p>
+      <a class="btn" href="https://ig.me/m/marianarabacal" target="_blank" rel="noopener">
+        Message me
+      </a>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Mariana.</p>
+      <p>This space does not replace medical or psychological care.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('main-nav');
+
+    if (toggle && nav) {
+     toggle.addEventListener('click', () => {
+       const isOpen = nav.classList.toggle('open');
+       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+  </script>
+</body>
+</html>
