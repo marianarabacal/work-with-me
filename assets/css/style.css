@@ -60,10 +60,14 @@ header {
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
   padding: 22px 20px;
   margin-bottom: 32px;
-  display: flex;
   flex-direction: column-reverse;
   align-items: center;
   gap: 18px;
+}
+
+header .hero-text {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -71,6 +75,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 26px 28px;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-photo {
+    margin-top: 4px;
   }
 }
 
@@ -109,8 +120,27 @@ h1 {
   height: 170px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 50% 30%;
   border: 3px solid var(--bg-soft);
 }
+
+.hero-inline-photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--bg-soft);
+  display: block;
+  margin: 0 auto 16px; /* mobile: centrada acima do texto */
+}
+
+@media (min-width: 768px) {
+  .hero-inline-photo {
+    float: right;
+    margin: 0 0 12px 24px; /* encosta à direita, com espaço para o texto à esquerda e por baixo */
+  }
+}
+
 
 /* botões */
 
@@ -211,13 +241,67 @@ footer {
 
 /* navegação principal */
 
+.nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.nav-toggle span {
+  margin-left: 6px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
 .main-nav {
   margin-bottom: 18px;
   font-size: 0.95rem;
 }
 
+/* mobile: nav escondida por defeito */
+
+@media (max-width: 767px) {
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav.open {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .main-nav a {
+    display: block;
+    margin: 4px 0;
+  }
+}
+
+/* desktop: nav sempre visível, links em linha */
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav a {
+    margin-right: 18px;
+    display: inline-block;
+  }
+}
+
 .main-nav a {
-  margin-right: 18px;
   color: var(--text);
   text-decoration: none;
   position: relative;
@@ -244,3 +328,17 @@ footer {
   border-radius: 999px;
 }
 
+
+/* estilo de links dentro do texto */
+
+.page a:not(.btn) {
+  color: var(--olive);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+
+.page a:not(.btn):hover {
+  color: var(--olive-dark);
+}
