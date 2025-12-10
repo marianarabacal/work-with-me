@@ -79,7 +79,7 @@ header {
   height: 170px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: 50% 25%; /* ajusta a “altura” da cara no círculo */
+  object-position: 50% 40%; /* ajusta a “altura” da cara no círculo */
   border: 3px solid var(--bg-soft);
 }
 
